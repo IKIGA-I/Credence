@@ -85,7 +85,7 @@ nav.main-nav a:link, nav.main-nav a:visited {
 }
 
 .char{
-	color: white;
+	color: black;
 	background-image: url(../img/bg1.png);
 	background-repeat: no-repeat;
 	background-position: center center;
