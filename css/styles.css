@@ -159,6 +159,7 @@ nav.main-nav a:link, nav.main-nav a:visited {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
 	padding-left: 50px;
 	padding-right: 50px;
 }
