@@ -3,6 +3,11 @@
 <html>
 <head>
 	<title>Credence - Tutoring at the tip of your fingers</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Londrina+Solid&display=swap" rel="stylesheet">
@@ -12,14 +17,31 @@
 <body>
 	<div class="navbar">
 		<div class="container-960">
-			<nav class="logo-part">
-				<h2>CREDENCE</h2>
-				<h3>REPEAT-PROGRESS-SUCCEED</h3>
-			</nav>
-        <nav class="main-nav">
-          <a class="active" href="index.html">Home</a>
-          <a href="experience.html">About</a>
-          <a href="location.html">Contact</a>
+        <nav class="navbar navbar-expand-md bg-color navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand logo-part" href="#"><h2>CREDENCE</h2>
+				<h3>REPEAT-PROGRESS-SUCCEED</h3></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
         </nav>
       </div><!-- /container-960 -->
 	</div>
