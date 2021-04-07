@@ -32,9 +32,14 @@ img {
 }
 
 nav{
-  background: #0082e6;
-  height: 80px;
+  background: #681212d4;
+  height: fit-content;
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  opacity: 1;
 }
 label.logo{
   color: white;
@@ -45,12 +50,12 @@ label.logo{
 }
 nav ul{
   float: right;
-  margin-right: 20px;
+  margin-right: auto;
 }
 nav ul li{
   display: inline-block;
   line-height: 80px;
-  margin: 0 5px;
+  margin: 0 10px;
 }
 nav ul li a{
   color: white;
@@ -103,6 +108,8 @@ a.active,a:hover{
   	margin-right: 100px;
   	padding-top: 10px;
   	padding-bottom: 10px;
+  	width: fit-content;
+	height: fit-content;
 }
 
 .logo-part h2, .logo-part h3{
@@ -150,7 +157,7 @@ nav.main-nav a:link, nav.main-nav a:visited {
 	background-attachment: fixed;
 	background-size: cover;
 	padding: 100px;
-	margin-top: 0;
+	margin-top: 100px;
 	text-align: center;
 	width: 100%;
 }
@@ -172,19 +179,19 @@ nav.main-nav a:link, nav.main-nav a:visited {
 }
 
 
-.Quote {
+.inner-quote {
 	background-color: transparent;
 	display: grid;
 	grid-template-columns: 250px auto;
 	grid-auto-rows: auto;
 	padding: 40px;
-	background-color: grey;
+	background-color: white;
 	grid-column-gap: 25px;
 	font-family: sans-serif;
 }
 
 .Quote img{
-	border: 10px solid white;
+	border: 10px solid black;
 	width: 250px;
 	border-radius: 1000px;
 	grid-row: 1;
@@ -212,6 +219,16 @@ nav.main-nav a:link, nav.main-nav a:visited {
 	grid-row: 2;
 	grid-column: 1;
 	text-align: left;
+}
+
+.inner-quote{
+	background-color: #e2e1db;
+	padding: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'Noto Sans JP', sans-serif;
+	width: 100;
+	margin: 30px;
 }
 
 .whyus {
@@ -285,9 +302,9 @@ nav.main-nav a:link, nav.main-nav a:visited {
 
 
 footer {
-	background-color: #801B7A;
-  	color: #FFAAFA;
-  	padding: 48px 0;
+	background-color: #681212d4;
+	color: white;
+  	padding: 48px 10px;
   	text-align: center;
   	width: 100%;
 }
@@ -357,10 +374,10 @@ footer {
 
 @media (max-width: 576px) {
 	h1, h2 {
-		font-size: 100%;
+		font-size: 120%;
 	}
 	h3, h4{
-		font-size: 70%;
+		font-size: 100%;
 	}
 	.Quote {
 	background-color: transparent;
@@ -368,17 +385,20 @@ footer {
 	grid-template-columns: auto;
 	grid-auto-rows: auto auto;
 	padding: 40px;
-	background-color: grey;
 	grid-column-gap: 25px;
-	font-family: sans-serif;
+	align-items: center;
+	justify-content: center;
 	}
 	.Quote img{
-	border: 10px solid white;
+	border: 10px solid black;
 	width: 250px;
 	border-radius: 1000px;
 	grid-row: 1;
 	grid-column: 1;
-	margin-right: 10px;
+	margin-right: 20px;
+	text-align: center;
+	justify-content: center;
+	margin-bottom: 20px;
 }
 
 .quotes-2{
