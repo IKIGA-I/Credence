@@ -1,3 +1,20 @@
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("zironox224@gmail.com", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
+}
+
+
+?>
+
 <!DOCTYPE html>
 <meta name="viewport" content="width=device-width"/>
 <html>
@@ -27,7 +44,7 @@
         <li><a class="active" href="index.html">Home</a></li>
         <li><a href="#whyus">About</a></li>
         <li><a href="#quote">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#contact-container">Contact</a></li>
       </ul>
     </nav>
     </div>
@@ -66,11 +83,64 @@
 
 		
 	</div>
+	<div class="contact-container" id="contact-container">
+	<div class="contact-us">
+		<div class="contact-title">
+			<h2>Contact Us</h2>
+			<h3>Ask us about anything!</h3>
+			<h4>You can also reach us @</h4>
+      	<p>Email: ouremail@gmail.com</p>
+      	<p>Contact No: +8801xxxxxxxxX</p>
+      	<p>Address: Bashundhara,Dhaka,Bangladesh</p>
+		</div>
+	<!-- 	<?php
+		$action=$_REQUEST['action'];
+		if ($action=="")    /* display the contact form */
+    	{
+    	?>
 
-	<div class="Teachers">
+    	      <?php
+    } 
+else                /* send the submitted data */
+    {
+    $name=$_REQUEST['name'];
+    $email=$_REQUEST['email'];
+    $message=$_REQUEST['message'];
+    if (($name=="")||($email=="")||($message==""))
+        {
+        echo "All fields are required, please fill <a href=\"\">the form</a> again.";
+        }
+    else{        
+        $from="From: $name<$email>\r\nReturn-path: $email";
+        $subject="Message sent using your contact form";
+        mail("youremail@yoursite.com", $subject, $message, $from);
+        echo "Email sent!";
+        }
+    }  
+?> -->
+		<form action="/contactformhandler.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Email</label>
+       <input type="text" id="email" name="email" placeholder="youremail@example.com" required>
+       <label for="subject">Subject</label>
+       <input type="text" id="subject" name="subject" placeholder="Subject">
+        <label for="message">Message</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+
+      <div class="contact-3">
+      	<h4>You can also reach us @</h4>
+      	<p>Email: ouremail@gmail.com</p>
+      	<p>Contact No: +8801xxxxxxxxX</p>
+      	<p>Address: Bashundhara,Dhaka,Bangladesh</p>
+      </div>
 		
 	</div>
-
+	</div>
 	<footer>
 		<div class="container-960">
         <div class="footer-text">
